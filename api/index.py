@@ -7,7 +7,7 @@ def handler(request, response):
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
 
     # Load marks data
-    with open("marks.json", "r") as f:
+    with open("q-vercel-python.json", "r") as f:
         marks_data = json.load(f)
 
     # Get names from query
